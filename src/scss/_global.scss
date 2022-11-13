@@ -1,0 +1,71 @@
+@use './variables' as *;
+@use './breakpoints' as *;
+@use './mixin' as *;
+@use './animations' as *;
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+
+	@include md {
+		font-size: 60%;
+	}
+}
+
+body {
+	font-family: $primary-font;
+	font-size: 1.6rem;
+	line-height: 1.5;
+
+	color: $light-color;
+	background-color: $dark-color;
+}
+
+.wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1660px;
+	margin: 0 auto;
+}
+
+.page-full {
+	width: 100%;
+	height: 100vh;
+}
+
+.section {
+	@include flex(center, center);
+
+	width: 100%;
+	height: 100%;
+	& + .section {
+		border-top: 1px solid rgba($color: $light-color, $alpha: 0.2);
+	}
+	&__header {
+		position: relative;
+	}
+	&__heading {
+	}
+	&__container {
+	}
+}
+
+@for $i from 1 through 10 {
+	.mb-#{$i} {
+		margin-bottom: #{$i}rem;
+	}
+	.mt-#{$i} {
+		margin-top: #{$i}rem;
+	}
+	.mx-#{$i} {
+		margin-right: #{$i}rem;
+		margin-left: #{$i}rem;
+	}
+	.my-#{$i} {
+		margin-top: #{$i}rem;
+		margin-bottom: #{$i}rem;
+	}
+}

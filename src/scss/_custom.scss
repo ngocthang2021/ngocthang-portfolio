@@ -1,0 +1,17 @@
+body::-webkit-scrollbar {
+	width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgba($color: #f5f1ee, $alpha: 0.6);
+	&:hover,
+	&:active {
+		background-color: rgba($color: #f5f1ee, $alpha: 0.8);
+	}
+}

@@ -1,0 +1,28 @@
+@use '../../scss/' as *;
+
+.btn {
+	padding: 1.2rem 1.6rem;
+	border: 1px solid $primary-color;
+	border-radius: 1.5rem;
+
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1;
+
+	color: $light-color;
+	background-color: $primary-color;
+
+	transition: all 0.2s ease;
+	cursor: pointer;
+	&:hover {
+		color: $primary-color;
+		background-color: transparent;
+	}
+
+	&--outline {
+		background-color: transparent;
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
+}
