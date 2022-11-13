@@ -1,7 +1,9 @@
 @import url('https://api.fontshare.com/v2/css?f[]=nunito@300,301,700,601,501,600,701,401,400,500&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=dancing-script@400&display=swap');
 
 // Fonts
 $primary-font: 'Nunito', sans-serif;
+$secondary-font: 'Dancing Script', cursive;
 
 // Colors
 $primary-color: #ff5975;
@@ -22,6 +24,7 @@ $linear-gradient: (#ff9482, #fbc2eb, #e0c4fd, #8a64eb, #a18cd1, #7d77ff, #8fc6fd
 $header-height: 60px;
 
 // Breakpoints
+$xs: 360px;
 $sm: 480px;
 $md: 768px;
 $lg: 1024px;

@@ -1,5 +1,11 @@
 @use './variables' as *;
 
+@mixin xs {
+	@media screen and (max-width: $xs) {
+		@content;
+	}
+}
+
 @mixin sm {
 	@media screen and (max-width: $sm) {
 		@content;

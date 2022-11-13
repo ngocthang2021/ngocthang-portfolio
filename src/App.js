@@ -1,24 +1,33 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Layout from './layout/Layout';
-
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Resume from './components/Resume/Resume';
-import Contact from './components/Contact/Contact';
+import { pageRoutes } from './config/routes';
 
 import './App.scss';
 
 function App() {
 	return (
-		<>
-			<Layout>
-				<Home />
-				<About />
-				<Resume />
-				<Contact />
-			</Layout>
-		</>
+		<Router>
+			<Routes>
+				{pageRoutes.map((route, index) => {
+					const Page = route.element;
+					let PageLayout = Layout;
+
+					return (
+						<Route
+							key={index}
+							path={route.path}
+							element={
+								<PageLayout>
+									<Page />
+								</PageLayout>
+							}
+						/>
+					);
+				})}
+			</Routes>
+		</Router>
 	);
 }
 

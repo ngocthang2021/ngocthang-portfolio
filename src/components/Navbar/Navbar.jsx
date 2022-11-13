@@ -1,19 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 import './Navbar.scss';
 
 const navRoutes = [
-	{ id: '#home', element: 'Home' },
-	{ id: '#about', element: 'About' },
-	{ id: '#resume', element: 'Resume' },
-	{ id: '#contact', element: 'Contact' },
+	{ path: '/', element: 'Home' },
+	{ path: '/about', element: 'About' },
+	{ path: '/resume', element: 'Resume' },
+	{ path: '/contact', element: 'Contact' },
 ];
 
 function Navbar() {
 	const headerRef = useRef();
+	const { pathname } = useLocation();
 	const [nav, setNav] = useState(false);
+
+	const active = navRoutes.findIndex((route) => route.path === pathname);
 
 	// Reveal Header onScroll
 	useEffect(() => {
@@ -39,12 +43,13 @@ function Navbar() {
 			className='header'
 		>
 			<nav className='nav'>
-				<a
+				<NavLink
 					href='/'
+					end
 					className='nav-logo'
 				>
 					<span>nnt</span>.dev
-				</a>
+				</NavLink>
 
 				{/* Nav Toggle Button */}
 				<div
@@ -59,15 +64,15 @@ function Navbar() {
 					{navRoutes.map((route, index) => (
 						<li
 							key={index}
-							className='nav-item'
+							className={`nav-item ${index === active ? 'active' : null}`}
 							onClick={() => setNav(false)}
 						>
-							<a
-								href={route.id}
+							<NavLink
+								to={route.path}
 								className='nav-link'
 							>
 								{route.element}
-							</a>
+							</NavLink>
 						</li>
 					))}
 					{/* <li

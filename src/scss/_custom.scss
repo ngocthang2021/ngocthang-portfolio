@@ -1,17 +1,24 @@
+@use './variables' as *;
+
 body::-webkit-scrollbar {
-	width: 4px;
+	width: 0;
 }
 
-body::-webkit-scrollbar-track {
-	border-radius: 10px;
-	background-color: transparent;
-}
+// body::-webkit-scrollbar-track {
+// 	border-radius: 10px;
+// 	background-color: transparent;
+// }
 
-body::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: rgba($color: #f5f1ee, $alpha: 0.6);
-	&:hover,
-	&:active {
-		background-color: rgba($color: #f5f1ee, $alpha: 0.8);
-	}
+// body::-webkit-scrollbar-thumb {
+// 	border-radius: 10px;
+// 	background-color: rgba($color: #f5f1ee, $alpha: 0.6);
+// 	&:hover,
+// 	&:active {
+// 		background-color: rgba($color: #f5f1ee, $alpha: 0.8);
+// 	}
+// }
+
+*::selection {
+	color: $light-color;
+	background-color: $primary-color;
 }

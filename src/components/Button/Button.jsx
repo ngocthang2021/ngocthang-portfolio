@@ -6,7 +6,7 @@ import './Button.scss';
 function Button({ className, onClick, children }) {
 	return (
 		<button
-			className={`btn btn-${className}`}
+			className={`btn ${className ? `btn-${className}` : null} `}
 			onClick={onClick ? () => onClick() : null}
 		>
 			{children}
@@ -15,7 +15,6 @@ function Button({ className, onClick, children }) {
 }
 
 Button.propTypes = {
-	className: PropTypes.string,
 	onClick: PropTypes.func,
 };
 

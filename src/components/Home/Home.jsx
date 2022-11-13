@@ -14,23 +14,27 @@ function Home() {
 			id='#home'
 		>
 			<div className='home-container'>
+				{/* Home Image */}
 				<div className='home-img mb-4'>
 					<img
 						src={avatar}
 						alt='Ngoc Thang'
 					/>
 				</div>
+
+				{/* Home Intro */}
 				<div className='home-content'>
 					<h4>Hi there!</h4>
 					<p>
-						I am <span>Nguyễn Ngọc Thắng</span>, a self-taught
+						I am <span>Thắng</span>, a self-taught
 						<span> Front-end Developer</span>.
 					</p>
 					<p>
-						I enjoy <span>building</span> and <span>creating</span> websites with <span>impressive UI</span>,{' '}
-						<span>animations</span> as well as <span>delivering</span> best <span>user experience</span> with clean and
-						maintainable code.
+						I enjoy building and creating websites with <span>impressive UI</span>, <span>animations</span> as well as{' '}
+						delivering best <span>user experience</span> with clean and maintainable code.
 					</p>
+
+					{/* Home Buttons | Socials Links */}
 					<div className='home-buttons mt-4'>
 						{profile.map((profile, index) => {
 							const Icon = profile.icon;
@@ -42,7 +46,7 @@ function Home() {
 										target='_blank'
 										rel='noopener noreferrer'
 									>
-										<Icon size={24} />
+										<Icon size={28} />
 									</a>
 								</Button>
 							);
