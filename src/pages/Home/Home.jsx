@@ -2,7 +2,7 @@ import React from 'react';
 
 import { profile } from '../../config/Profile';
 
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 
 import avatar from '../../assets/avatar-img.jpg';
 import './Home.scss';
