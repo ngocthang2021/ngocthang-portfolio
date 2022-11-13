@@ -1,0 +1,12 @@
+@use '../../scss/' as *;
+
+.about {
+}
+
+.object {
+	&__buttons {
+		@include flex(center, center);
+		flex-wrap: wrap;
+		gap: 1.6rem;
+	}
+}

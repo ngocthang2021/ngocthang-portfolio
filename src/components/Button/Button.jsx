@@ -6,7 +6,7 @@ import './Button.scss';
 function Button({ className, onClick, children }) {
 	return (
 		<button
-			className={`btn ${className ? `btn-${className}` : null} `}
+			className={`btn ${className ? className : ''} `}
 			onClick={onClick ? () => onClick() : null}
 		>
 			{children}

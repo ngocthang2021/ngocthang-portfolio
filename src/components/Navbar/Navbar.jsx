@@ -44,7 +44,7 @@ function Navbar() {
 		>
 			<nav className='nav'>
 				<NavLink
-					href='/'
+					to='/'
 					end
 					className='nav-logo'
 				>

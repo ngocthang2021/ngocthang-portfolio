@@ -9,10 +9,7 @@ import './Home.scss';
 
 function Home() {
 	return (
-		<section
-			className='page-full section home'
-			id='#home'
-		>
+		<section className='section home'>
 			<div className='home-container'>
 				{/* Home Image */}
 				<div className='home-img mb-4'>
@@ -26,12 +23,15 @@ function Home() {
 				<div className='home-content'>
 					<h4>Hi there!</h4>
 					<p>
-						I am <span>Thắng</span>, a self-taught
-						<span> Front-end Developer</span>.
+						I am <span className='highlight--pink'>Thắng</span>, a self-taught
+						<span className='highlight--pink'> Front-end Developer</span>.
 					</p>
 					<p>
-						I enjoy building and creating websites with <span>impressive UI</span>, <span>animations</span> as well as{' '}
-						delivering best <span>user experience</span> with clean and maintainable code.
+						I enjoy <span className='highlight--blue'>building</span> and{' '}
+						<span className='highlight--blue'>creating</span> websites with{' '}
+						<span className='highlight--pink'>impressive UI</span>, <span className='highlight--pink'>animations</span>{' '}
+						as well as <span className='highlight--blue'>delivering</span> best{' '}
+						<span className='highlight--pink'>user experience</span> with clean and maintainable code.
 					</p>
 
 					{/* Home Buttons | Socials Links */}

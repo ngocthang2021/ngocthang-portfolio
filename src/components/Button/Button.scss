@@ -43,4 +43,17 @@
 	&:hover {
 		color: $primary-color;
 	}
+
+	&.outline {
+		border: 1px solid $light-color;
+	}
+	&.bg {
+		color: $primary-color;
+		&::after {
+			transform: translate(-50%, -50%) scale(1);
+		}
+		&:hover::after {
+			transform: translate(-50%, -50%) scale(0);
+		}
+	}
 }
