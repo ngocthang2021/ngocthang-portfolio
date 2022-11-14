@@ -12,7 +12,7 @@ import vercelIcon from '../assets/svg-icons/logo-vercel-svg.svg';
 import netlifyIcon from '../assets/svg-icons/netlify-svg.svg';
 
 import { BiCodeBlock, BiDevices } from 'react-icons/bi';
-import { GrDeploy } from 'react-icons/gr';
+import { AiOutlineDeploymentUnit } from 'react-icons/ai';
 import { FaConnectdevelop } from 'react-icons/fa';
 
 // Skills Technology
@@ -52,7 +52,7 @@ export const skillsAbilities = [
 			'Applying libraries/languages such as ReactJS, TailwinCSS or SASS/SCSS to create beautiful, impressive and friendly UI.',
 	},
 	{
-		icon: GrDeploy,
+		icon: AiOutlineDeploymentUnit,
 		title: 'Deployment',
 		description:
 			'Deploying websites on multiple platforms such as Vercel, Netlify to leverage caching and firewalls at the edge',
