@@ -55,11 +55,11 @@ const SkillsAbilityCard = ({ skillItem }) => {
 	const SkillsIcon = skillItem.icon;
 	return (
 		<div className='skills__ability-card'>
-			<h4>
-				<SkillsIcon size={28} />
-				<span>{skillItem.title}</span>
-			</h4>
-			<p>{skillItem.description}</p>
+			<div className='skills__ability-title'>
+				<SkillsIcon />
+				<h4>{skillItem.title}</h4>
+			</div>
+			<p className='skills__ability-desc'>{skillItem.description}</p>
 		</div>
 	);
 };
