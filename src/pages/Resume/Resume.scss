@@ -25,4 +25,10 @@
 	&__text {
 		font-size: 2.4rem;
 	}
+	&__arrow {
+		@include flex(center, center);
+		padding: 0.5rem;
+
+		animation: slidingDown 1s linear infinite alternate;
+	}
 }
