@@ -54,17 +54,23 @@ function Navbar() {
 				{/* Nav Toggle Button */}
 				<div
 					className='nav-toggle'
-					onClick={() => setNav(!nav)}
+					onClick={() => setNav(true)}
 				>
-					{nav ? <AiOutlineClose size={32} /> : <AiOutlineMenu size={32} />}
+					<AiOutlineMenu size={32} />
 				</div>
 
 				{/* Nav Menu */}
 				<ul className={`nav-menu ${nav ? 'active' : ''}`}>
+					<div
+						className='nav-menu-close'
+						onClick={() => setNav(false)}
+					>
+						<AiOutlineClose size={32} />
+					</div>
 					{navRoutes.map((route, index) => (
 						<li
 							key={index}
-							className={`nav-item ${index === active ? 'active' : null}`}
+							className={`nav-item ${index === active ? 'active' : ''}`}
 							onClick={() => setNav(false)}
 						>
 							<NavLink
