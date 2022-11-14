@@ -1,12 +1,27 @@
 @use '../../scss/' as *;
 
-.about {
-}
-
 .object {
 	&__buttons {
 		@include flex(center, center);
 		flex-wrap: wrap;
 		gap: 1.6rem;
+	}
+
+	&__quote {
+		font-weight: 700;
+		text-align: center;
+
+		background-size: 200% 200%;
+
+		background: linear-gradient(to right, $gradient-2);
+		background-clip: text;
+
+		background: -webkit-gradient(to right, $gradient-2);
+		-webkit-background-clip: text;
+
+		background: -moz-linear-gradient(to right, $gradient-2);
+		-moz-background-clip: text;
+
+		-webkit-text-fill-color: transparent;
 	}
 }

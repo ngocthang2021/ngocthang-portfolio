@@ -32,7 +32,9 @@ function About() {
 					<h2 className='section__heading--bg'>Objectives</h2>
 				</div>
 				<div className='section__container'>
-					<p className='highlight--small mb-4'>'Great things starts from small beginnings'</p>
+					<p className='highlight--small object__quote mb-4'>
+						<span>&ldquo;</span>Great things starts from small beginnings<span>&rdquo;</span>
+					</p>
 
 					<p>I am aiming to become a proficient Front-end Developer in the future.</p>
 
