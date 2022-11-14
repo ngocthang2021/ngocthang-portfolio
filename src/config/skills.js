@@ -22,7 +22,11 @@ export const skillsTech = [
 
 export const skillsAbilities = [
 	{
-		skill: '',
+		title: 'Web Development',
+		desc: '',
+	},
+	{
+		title: 'Responsive Webiste',
 		desc: '',
 	},
 ];
