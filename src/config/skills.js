@@ -4,29 +4,57 @@ import sassIcon from '../assets/svg-icons/sass-svg.svg';
 import javascriptIcon from '../assets/svg-icons/js-svg.svg';
 import reactIcon from '../assets/svg-icons/react-svg.svg';
 import tailwindcssIcon from '../assets/svg-icons/tailwindcss-icon-svg.svg';
-import bootstrapIcon from '../assets/svg-icons/bootstrap-svg.svg';
 import figmaIcon from '../assets/svg-icons/figma-svg.svg';
 import photoshopIcon from '../assets/svg-icons/photoshop-svg.svg';
+import gitIcon from '../assets/svg-icons/git-svg.svg';
+import githubIcon from '../assets/svg-icons/github-svg.svg';
+import vercelIcon from '../assets/svg-icons/logo-vercel-svg.svg';
+import netlifyIcon from '../assets/svg-icons/netlify-svg.svg';
 
+import { BiCodeBlock, BiDevices } from 'react-icons/bi';
+import { GrDeploy } from 'react-icons/gr';
+import { FaConnectdevelop } from 'react-icons/fa';
+
+// Skills Technology
 export const skillsTech = [
 	{ skill: 'HTML', icon: htmlIcon },
 	{ skill: 'CSS', icon: cssIcon },
 	{ skill: 'Javascript', icon: javascriptIcon },
 	{ skill: 'Sass', icon: sassIcon },
 	{ skill: 'Tailwindcss', icon: tailwindcssIcon },
-	{ skill: 'Bootstrap', icon: bootstrapIcon },
 	{ skill: 'React', icon: reactIcon },
 	{ skill: 'Photoshop', icon: photoshopIcon },
 	{ skill: 'Figma', icon: figmaIcon },
+	{ skill: 'Github', icon: githubIcon },
+	{ skill: 'Git', icon: gitIcon },
+	{ skill: 'Vercel', icon: vercelIcon },
+	{ skill: 'Netlify', icon: netlifyIcon },
 ];
 
+// Skills Abilities
 export const skillsAbilities = [
 	{
+		icon: BiCodeBlock,
 		title: 'Web Development',
-		desc: '',
+		description:
+			'Developing website features with clean and maintainable code with modern Javascript(ES6) syntax as well as ReactJS.',
 	},
 	{
+		icon: BiDevices,
 		title: 'Responsive Webiste',
-		desc: '',
+		description:
+			'Building dynamic, repsonsive websites that are accessible on multiple devices for better user experience.',
+	},
+	{
+		icon: FaConnectdevelop,
+		title: 'Modern Technology',
+		description:
+			'Applying libraries/languages such as ReactJS, TailwinCSS or SASS/SCSS to create beautiful, impressive and friendly UI.',
+	},
+	{
+		icon: GrDeploy,
+		title: 'Deployment',
+		description:
+			'Deploying websites on multiple platforms such as Vercel, Netlify to leverage caching and firewalls at the edge',
 	},
 ];
