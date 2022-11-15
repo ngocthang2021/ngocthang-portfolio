@@ -23,5 +23,6 @@
 		opacity: 1;
 	}
 	&:hover {
+		box-shadow: 0 0 10px 2px rgba($color: $light-color, $alpha: 0.2);
 	}
 }
