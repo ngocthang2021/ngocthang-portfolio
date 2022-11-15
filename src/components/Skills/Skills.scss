@@ -41,7 +41,7 @@
 			width: 15rem;
 			height: 15rem;
 
-			border: 1px solid rgba($color: $light-color, $alpha: 0.2);
+			border: 1px solid rgba($color: $light-pink-color, $alpha: 0.2);
 			border-radius: 1.6rem;
 
 			background-color: transparent;
@@ -61,7 +61,7 @@
 				width: 100%;
 				height: 100%;
 
-				box-shadow: inset 0 0 200px rgba($color: $light-color, $alpha: 0.4);
+				box-shadow: inset 0 0 200px rgba($color: $light-pink-color, $alpha: 0.4);
 				filter: blur(80px);
 
 				transition: all 0.4s ease;
@@ -87,7 +87,7 @@
 	// Skill Ability List
 	&__ability {
 		width: 100%;
-		margin-top: 20rem;
+		margin: 20rem auto 1.6rem;
 
 		// Container | Wrapper
 		&-container {
@@ -104,27 +104,53 @@
 
 		// Card
 		&-card {
+			position: relative;
+
 			padding: 1.6rem;
 			border-radius: 1.6rem;
 			border: 1px solid rgba($color: $light-color, $alpha: 0.2);
-		}
-		&-title {
-			@include flex(center, flex-start);
-			margin-bottom: 1.8rem;
 
-			font-size: 2.8rem;
-			font-weight: 600;
-			text-align: left;
-			color: $primary-color;
-			& svg {
-				margin-right: 1rem;
-				@include sm {
-					display: none;
-				}
+			cursor: default;
+			transition: all 0.2s ease;
+
+			&:hover &__bg {
+				opacity: 0.2;
 			}
-		}
-		&-desc {
-			font-size: 1.8rem;
+			&:hover {
+				box-shadow: 0 0 5px 2px rgba($color: $light-pink-color, $alpha: 0.4);
+			}
+			// Background Icon
+			&__bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				@include flex(center, center);
+
+				width: 100%;
+				height: 100%;
+
+				font-size: 10em;
+
+				color: rgba($color: $light-color, $alpha: 0.4);
+
+				opacity: 0.05;
+				z-index: -1;
+				transition: all 0.2s ease;
+			}
+			// Title
+			&__title {
+				@include flex(center, flex-start);
+				margin-bottom: 1.8rem;
+
+				font-size: 2.8rem;
+				font-weight: 600;
+				text-align: left;
+				color: $primary-color;
+			}
+			&__desc {
+				font-size: 1.8rem;
+			}
 		}
 	}
 }

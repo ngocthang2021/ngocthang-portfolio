@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { skillsTech, skillsAbilities } from '../../config/skills';
+import { skillsTech, skillsAbilities } from '../../data/skillsData';
 
 import './Skills.scss';
 
@@ -55,11 +55,13 @@ const SkillsAbilityCard = ({ skillItem }) => {
 	const SkillsIcon = skillItem.icon;
 	return (
 		<div className='skills__ability-card'>
-			<div className='skills__ability-title'>
+			<div className='skills__ability-card__bg'>
 				<SkillsIcon />
+			</div>
+			<div className='skills__ability-card__title'>
 				<h4>{skillItem.title}</h4>
 			</div>
-			<p className='skills__ability-desc'>{skillItem.description}</p>
+			<p className='skills__ability-card__desc'>{skillItem.description}</p>
 		</div>
 	);
 };
