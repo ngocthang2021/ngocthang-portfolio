@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { profile } from '../../config/Profile';
+import { profile } from '../../data/profileData';
 
 import Button from '../../components/Button/Button';
 
