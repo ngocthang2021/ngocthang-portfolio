@@ -8,11 +8,14 @@
 	width: 100%;
 	height: $header-height;
 
+	background-color: transparent;
+
 	z-index: 1000;
+	transition: all 0.2s ease;
 
 	&.fixed {
-		background-color: rgba($color: $black-color, $alpha: 0.4);
-		animation: headerSlidedown 0.5s forwards linear;
+		background-color: $dark-color;
+		box-shadow: 0 1px 5px 2px rgba($color: $black-color, $alpha: 0.2);
 	}
 }
 
