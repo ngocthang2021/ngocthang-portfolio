@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SkillsList from '../../components/Skills/Skills';
+import Project from '../../components/Project/Project';
 
 import { TfiArrowDown } from 'react-icons/tfi';
 
@@ -18,6 +19,7 @@ function Resume() {
 			</div>
 
 			<SkillsList />
+			<Project />
 		</section>
 	);
 }
