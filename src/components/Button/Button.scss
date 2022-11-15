@@ -29,7 +29,7 @@
 		width: 150%;
 		height: 150%;
 
-		border-radius: 50%;
+		border-radius: inherit;
 
 		background-color: $light-color;
 
@@ -48,7 +48,12 @@
 		border: 1px solid $light-color;
 	}
 	&.bg {
+		border: 1px solid $light-color;
+
 		color: $primary-color;
+		&:hover {
+			color: $light-color;
+		}
 		&::after {
 			transform: translate(-50%, -50%) scale(1);
 		}
