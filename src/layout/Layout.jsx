@@ -7,7 +7,7 @@ function Layout({ children }) {
 	return (
 		<div className='wrapper'>
 			<Navbar />
-			<div className='page-full'>{children}</div>
+			<div>{children}</div>
 			<ScrollTopButton />
 		</div>
 	);
