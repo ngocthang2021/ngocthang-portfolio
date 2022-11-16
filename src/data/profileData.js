@@ -15,6 +15,7 @@ export const profileSocial = [
 	{ social: 'Instagram', path: 'https://www.instagram.com/nnt.20/', icon: FaInstagram },
 	{ social: 'Github', path: 'https://github.com/ngocthang2021', icon: FaGithub },
 	{ social: 'LinkedIn', path: 'https://www.linkedin.com/in/ngngthang/', icon: FaLinkedin },
+	{ social: 'Email', path: 'ng.ngocthang2021@gmail.com', icon: FaGoogle },
 ];
 
 export const profileInformation = [
