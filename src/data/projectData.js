@@ -34,7 +34,7 @@ export const projectData = [
 	{
 		projectTitle: 'Forkify',
 		projectImage: forkifyAppImage,
-		projectDescription: 'My portfolio using React.',
+		projectDescription: "Project from Jonas's Javascript Course on Udemy.",
 		projectStatus: 'ongoing',
 		projectTech: ['HTML', 'CSS (SCSS)', 'Javascript'],
 		projectLink: 'https://ngocthang-portfolio.vercel.app/',
