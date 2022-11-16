@@ -1,1 +1,105 @@
 @use '../../scss/' as *;
+
+.project {
+	border-top: 1px solid rgba($color: $light-color, $alpha: 0.2);
+	&__header {
+		width: 100%;
+		height: 100vh;
+
+		@include flex(center, center);
+
+		& h2 {
+			font-size: 10rem;
+			letter-spacing: 0.2em;
+
+			background-image: linear-gradient(45deg, $gradient);
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	&__container {
+		max-width: 1050px;
+		margin: 0 auto;
+		padding: 0 1.6rem 2rem;
+
+		display: grid;
+		grid-template-columns: repeat(2, minmax(350px, 1fr));
+		gap: 2rem;
+		@include md {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+// Project Card
+.project__card {
+	height: 500px;
+
+	border: 1px solid rgba($color: $light-pink-color, $alpha: 0.2);
+	border-radius: 1.6rem;
+	overflow: hidden;
+
+	@include flex(center, center);
+	flex-direction: column;
+
+	// Card Image
+	&-image,
+	&-info {
+		flex: 1;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-image {
+		overflow: hidden;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top center;
+		}
+	}
+
+	// Card Info
+	&-info {
+		padding: 1.2rem 2.4rem;
+		text-align: center;
+	}
+	&-title {
+		font-size: 2.8rem;
+	}
+	&-desc {
+		font-size: 2rem;
+	}
+	&-credits {
+		@include flex(center, center);
+		gap: 2rem;
+		> a {
+			width: 100%;
+			height: 100%;
+		}
+
+		// Project Card notification
+		& .text {
+			padding: 0 2rem;
+			@include flex(center, center);
+			gap: 1.6rem;
+
+			border: 1px solid rgba($color: $light-pink-color, $alpha: 0.2);
+			border-radius: 50px;
+
+			font-size: 2.4rem;
+			font-weight: 500;
+
+			color: $light-color;
+			background-color: $primary-color;
+			& .loading {
+				transform-origin: center;
+
+				animation: loading 2s ease-in-out infinite forwards;
+			}
+		}
+	}
+}
