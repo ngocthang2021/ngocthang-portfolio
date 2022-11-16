@@ -39,6 +39,16 @@
 	}
 }
 
+@keyframes glowing {
+	0%,
+	100% {
+		background: rgba($color: #fedada, $alpha: 0.06);
+	}
+	50% {
+		background: transparent;
+	}
+}
+
 @keyframes waves {
 	0%,
 	100% {
