@@ -11,16 +11,16 @@ function Home() {
 	return (
 		<div className='page-full'>
 			<section className='section home'>
-				<div className='home-container'>
+				<div className='home__container'>
 					{/* Home Image */}
-					<div className='home-img mb-4'>
+					<div className='home__img mb-4'>
 						<img
 							src={avatar}
 							alt='Ngoc Thang'
 						/>
 					</div>
 					{/* Home Intro */}
-					<div className='home-content'>
+					<div className='home__content'>
 						<h4>Hi there!</h4>
 						<p>
 							I am <span className='highlight--pink'>Thắng</span>, a self-taught
@@ -35,8 +35,8 @@ function Home() {
 							<span className='highlight--pink'>user experience</span> with clean and maintainable code.
 						</p>
 						{/* Home Buttons | Socials Links */}
-						<div className='home-buttons mt-4'>
-							{profileSocial.map((profile, index) => {
+						<div className='home__buttons mt-4'>
+							{profileSocial.slice(0, 4).map((profile, index) => {
 								const Icon = profile.icon;
 								return (
 									<Button key={index}>

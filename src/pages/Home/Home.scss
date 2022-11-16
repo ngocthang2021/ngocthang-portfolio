@@ -1,12 +1,12 @@
 @use '../../scss/' as *;
 
 .home {
-	&-container {
+	&__container {
 		padding: 0 1rem;
 	}
 
 	// Home Image
-	&-img {
+	&__img {
 		max-width: 30rem;
 		margin: 0 auto;
 		padding: 0.4rem;
@@ -29,7 +29,7 @@
 	}
 
 	// Content
-	&-content {
+	&__content {
 		max-width: 800px;
 		margin: 0 auto;
 
@@ -51,7 +51,7 @@
 	}
 
 	// Buttons
-	&-buttons {
+	&__buttons {
 		@include flex(center, center);
 		flex-wrap: wrap;
 		gap: 1.6rem;
