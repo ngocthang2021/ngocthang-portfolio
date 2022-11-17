@@ -9,7 +9,6 @@ const navRoutes = [
 	{ path: '/', element: 'Home' },
 	{ path: '/about', element: 'About' },
 	{ path: '/resume', element: 'Resume' },
-	{ path: '/contact', element: 'Contact' },
 ];
 
 function Navbar() {
