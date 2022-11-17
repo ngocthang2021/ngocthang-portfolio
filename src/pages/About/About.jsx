@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { profileContact } from '../../data/profileData';
-
 import Button from '../../components/Button/Button';
 
 import './About.scss';
@@ -69,32 +67,6 @@ function About() {
 								<span>Explore More</span>
 							</Button>
 						</div>
-					</div>
-				</section>
-			</div>
-			{/* Contact Section */}
-			<div className='page-full'>
-				<section className='section contact'>
-					<div className='section__header'>
-						<h2 className='section__heading'>Contact</h2>
-						<h2 className='section__heading--bg'>Contact</h2>
-					</div>
-					<div className='section__container'>
-						<p className='contact__title'>Get in touch with me!</p>
-						<ul className='contact__list'>
-							{profileContact.map((item, index) => {
-								const Icon = item.icon;
-
-								return (
-									<li
-										key={index}
-										className='contact__item'
-									>
-										<Icon />
-									</li>
-								);
-							})}
-						</ul>
 					</div>
 				</section>
 			</div>
