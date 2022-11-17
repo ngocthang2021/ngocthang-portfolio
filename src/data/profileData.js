@@ -51,10 +51,9 @@ export const profileContact = [
 		icon: FaLinkedin,
 	},
 	{
-		contact_site: 'Email',
+		contact_site: 'Gmail',
 		contact_display: 'ng.ngocthang2021@gmail.com',
 		contact_link: 'ng.ngocthang2021@gmail.com',
 		icon: FaGoogle,
 	},
-	{ contact_site: 'Phone', contact_display: '+84986834992', contact_link: '+84986834992', icon: FaPhoneAlt },
 ];

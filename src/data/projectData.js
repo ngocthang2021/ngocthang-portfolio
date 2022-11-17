@@ -1,7 +1,6 @@
 import portfolioImage from '../assets/project-images/ngocthang-portfolio.png';
 import digitalClockImage from '../assets/project-images/digital-clock.png';
 import reactMovieAppImage from '../assets/project-images/react-movie-app.png';
-import forkifyAppImage from '../assets/project-images/forkify.png';
 
 export const projectData = [
 	{
@@ -30,14 +29,5 @@ export const projectData = [
 		projectTech: ['ReactJS', 'CSS (SCSS)', 'Javascript'],
 		projectLink: 'https://ngocthang-portfolio.vercel.app/',
 		projectSource: 'https://github.com/ngocthang2021/ngocthang-portfolio',
-	},
-	{
-		projectTitle: 'Forkify',
-		projectImage: forkifyAppImage,
-		projectDescription: "Project from Jonas's Javascript Course on Udemy.",
-		projectStatus: 'ongoing',
-		projectTech: ['HTML', 'CSS (SCSS)', 'Javascript'],
-		projectLink: 'https://ngocthang-portfolio.vercel.app/',
-		projectSource: 'https://github.com/ngocthang2021/forkify-nnt',
 	},
 ];
