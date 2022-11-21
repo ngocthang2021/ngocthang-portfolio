@@ -115,6 +115,7 @@ body {
 }
 
 .highlight {
+	@include highlight($light-color);
 	&--pink {
 		@include highlight($primary-color);
 	}

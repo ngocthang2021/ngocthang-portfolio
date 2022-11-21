@@ -44,9 +44,9 @@ function About() {
 						</p>
 						<p>I am aiming to become a proficient Front-end Developer in the future.</p>
 						<p>
-							But at the current, I am looking for an <span className='highlight--pink'>Intern FE</span> position with
-							the aim of enhancing and improving my <span className='highlight--blue'>coding</span> as well as{' '}
-							<span className='highlight--blue'>logical thinking</span> skills.
+							At the current, I am looking for an <span className='highlight--pink'>Intern FE</span> position with the
+							aim of enhancing and improving my <span className='highlight'>coding</span> as well as{' '}
+							<span className='highlight'>logical thinking</span> skills.
 						</p>
 						<p>
 							I enjoy learning new things, I want to apply my knowledges that I've gained to make special things that

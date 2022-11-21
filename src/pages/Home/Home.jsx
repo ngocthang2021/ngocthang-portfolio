@@ -23,16 +23,14 @@ function Home() {
 					<div className='home__content'>
 						<h4>Hi there!</h4>
 						<p>
-							I am <span className='highlight--pink'>Thắng</span>, a self-taught
+							I am <span className='highlight--blue'>Ngọc Thắng</span>, a self-taught/newbie
 							<span className='highlight--pink'> Front-end Developer</span>.
 						</p>
 						<p>
-							I enjoy <span className='highlight--blue'>building</span> and{' '}
-							<span className='highlight--blue'>creating</span> websites with{' '}
-							<span className='highlight--pink'>impressive UI</span>,{' '}
-							<span className='highlight--pink'>animations</span> as well as{' '}
-							<span className='highlight--blue'>delivering</span> best{' '}
-							<span className='highlight--pink'>user experience</span> with clean and maintainable code.
+							I enjoy <span className='highlight'>building</span> and <span className='highlight'>creating</span>{' '}
+							websites with <span className='highlight'>impressive UI</span>,{' '}
+							<span className='highlight'>animations</span> as well as <span className='highlight'>delivering</span>{' '}
+							best <span className='highlight'>user experience</span> with clean and maintainable code.
 						</p>
 						{/* Home Buttons | Socials Links */}
 						<div className='home__buttons mt-4'>
