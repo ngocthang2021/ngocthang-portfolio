@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 import Button from '../../components/Button/Button';
 
+import resume from '../../assets/Nguyen_Ngoc_Thang_Resume.pdf';
+
 import './About.scss';
 
 function About() {
@@ -53,9 +55,8 @@ function About() {
 						<div className='object__buttons mt-4'>
 							<Button className={'outline'}>
 								<a
-									href='../../assets/avatar-img.jpg'
+									href={resume}
 									download='Nguyen_Ngoc_Thang_CV'
-									target='_blank'
 								>
 									Download CV
 								</a>
